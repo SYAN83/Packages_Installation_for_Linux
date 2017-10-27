@@ -1,0 +1,1 @@
+# stack_docker_swarm
