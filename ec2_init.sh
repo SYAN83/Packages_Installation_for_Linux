@@ -26,6 +26,9 @@ sudo apt-get update
 sudo apt-get -y install docker-ce
 # Add the current user to docker group
 sudo usermod -aG docker $USER
+# Install Compose
+sudo curl -L https://github.com/docker/compose/releases/download/1.16.1/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
 # Install Docker Machine
 curl -L https://github.com/docker/machine/releases/download/v0.13.0/docker-machine-`uname -s`-`uname -m` >/tmp/docker-machine &&
 chmod +x /tmp/docker-machine &&
