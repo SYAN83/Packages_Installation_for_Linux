@@ -12,6 +12,8 @@ After installation, logout and log back in.
 
 `ec2_init.sh` installs the following tools (tested on AWS EC2 VM, AMI: Ubuntu 16.04):
 1. Git
-2. Docker CE
-3. Docker Compose
-4. Docker Machine
+2. Docker
+  - Docker CE
+  - Docker Compose
+  - Docker Machine
+3. Python3 virtualenv
