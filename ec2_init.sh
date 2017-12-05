@@ -1,5 +1,5 @@
 #!/bin/bash
-# A init file for Ubuntu (tested on 16.04)
+# Amazon EC2 docker installation (tested on Ubuntu 16.04)
 # Update the apt package index
 sudo apt-get update
 # Install git
@@ -33,5 +33,4 @@ sudo chmod +x /usr/local/bin/docker-compose
 curl -L https://github.com/docker/machine/releases/download/v0.13.0/docker-machine-`uname -s`-`uname -m` >/tmp/docker-machine &&
 chmod +x /tmp/docker-machine &&
 sudo cp /tmp/docker-machine /usr/local/bin/docker-machine
-# Install python3 virtualenv
-sudo apt-get -y install python3-venv
+
