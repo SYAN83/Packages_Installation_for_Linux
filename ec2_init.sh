@@ -8,7 +8,7 @@ sudo apt install git
 # git config --global user.email "you@example.com"
 # git config --global user.name "Your Name"
 # Install packages to allow apt to use a repository over HTTPS
-sudo apt-get install \
+sudo apt-get -y install \
   apt-transport-https \
   ca-certificates \
   curl \
