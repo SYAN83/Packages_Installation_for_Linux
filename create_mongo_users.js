@@ -3,17 +3,15 @@ use admin
 db.createUser(
   {
     user: "admin",
-    pwd: "FreshStart2018!",
+    pwd: "******",
     roles: ["userAdminAnyDatabase", "dbAdminAnyDatabase", "readWriteAnyDatabase"]
   }
 )
 
-use jobs
-
 db.createUser(
  {
    user: "jobs_user",
-   pwd: "jobFreshStart",
+   pwd: "******",
    roles: [ { role: "readWrite", db: "jobs" }]
  }
 )
@@ -21,8 +19,7 @@ db.createUser(
 db.createUser(
  {
    user: "jobs_user_readonly",
-   pwd: "jobPortalRead",
+   pwd: "******",
    roles: [ { role: "read", db: "jobs" }]
  }
 )
-
