@@ -28,7 +28,10 @@ if grep -q "authorization: 'enabled'" /etc/mongod.conf ; then
 	sudo sed -i -e "s/authorization: 'enabled'/authorization: 'disabled'/g" /etc/mongod.conf
 	sudo service mongod restart
 fi
-mongo < create_mongo_users.js
+if [ -f ./create_mongo_users.js ]; then
+	echo "Create MongoDB users"
+	mongo < create_mongo_users.js
+fi
 
 echo "Enable authorization and remote access"
 sudo sed -i -e "s/bindIp: 127.0.0.1/bindIp: 0.0.0.0/g" /etc/mongod.conf
